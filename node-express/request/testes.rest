@@ -1,0 +1,17 @@
+### Define a URL base para as requisições
+@baseURL = http://localhost:3000
+
+### Teste da rota GET /produtos
+GET {{baseURL}}/produtos
+
+### Teste da rota POST /produtos
+POST {{baseURL}}/produtos
+
+### Teste da rota PUT /produtos/:id
+PUT {{baseURL}}/produtos/1
+
+### Teste da DELETE /produtos/:id
+DELETE {{baseURL}}/produtos/1001
+
+### TESTE de autenticação
+GET {{baseURL}}/perfil

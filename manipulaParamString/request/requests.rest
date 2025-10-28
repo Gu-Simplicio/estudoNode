@@ -1,0 +1,8 @@
+### Define a url base para as requisições
+@baseUrl = http://localhost:3000
+
+### Teste de GET para rota /usuarios/:id
+GET {{baseUrl}}/usuarios/1
+
+### Teste de GET para rota /produtos 
+GET {{baseUrl}}/produtos?categoria=eletronicos&&precoMaximo=1500

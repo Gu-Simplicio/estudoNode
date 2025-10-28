@@ -1,0 +1,27 @@
+@baseUrl = http://localhost:3000
+
+### Testa a rota POST /usuarios (CREATE)
+POST {{baseUrl}}/usuarios
+Content-Type: application/json
+
+{
+    "nome": "Gustavo",
+    "idade": 17
+}
+
+### Testa a rota GET /usuarios (READ)
+GET {{baseUrl}}/usuarios
+Content-Type: application/json
+
+### Testa a rota PUT /usuarios/:id (UPDATE)
+PUT {{baseUrl}}/usuarios/1
+Content-Type: application/json
+
+{
+    "nome": "Carlos Silva",
+    "idade": 29
+}
+
+### Testa a rota DELETE /usuarios/:id (DELETE)
+DELETE {{baseUrl}}/usuarios/1
+Content-Type: application/json

@@ -1,0 +1,25 @@
+@baseUrl = http://localhost:3000/api
+
+
+### Registro de usuário
+POST {{baseUrl}}/register
+Content-Type: application/json
+
+{
+    "username": "novousuario",
+    "password": "senha123",
+    "roles": ["user"]
+}
+
+### Login de usuário
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+    "username": "novousuario",
+    "password": "senha123"
+}
+
+###Acesso a rota protegida 
+GET {{baseUrl}}/protected
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJub3ZvdXN1YXJpbyIsInJvbGVzIjpbInVzZXIiXSwiaWF0IjoxNzU5NzU5MjY3LCJleHAiOjE3NTk3NjI4Njd9.ZbgPdfsbtLLCD3EG5i_BVvzKzqrH2uA1gfuIRSRGlBI
